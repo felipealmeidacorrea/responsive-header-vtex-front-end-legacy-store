@@ -1,5 +1,5 @@
 body {
-    background-color: #F4F6F7;
+    background-color: #CCCCCC;
 }
 
 .fac-footer {
@@ -222,11 +222,13 @@ body {
     display: flex;
     align-items:center;
     justify-content: center;
-    border: 1px solid black;
-    padding: 20px;
+    border: one;
+    background-color: #FFFFFF;
 }
 
 .desktop-header-itens {
+    color: #E41021;
+    font-family: galano-grotesque;
     display: none;
 }
 
@@ -234,6 +236,15 @@ body {
 @media (min-width: 1024px) {
     .desktop-header-itens {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .logo-header-mob {
+        display: none;
     }
 }
 
@@ -242,11 +253,50 @@ body {
 }
 
 .header__input {
-    padding: 5px;
+    padding: 10;
     border: none;
     background: #CCCCCC;
     border-radius: 5px;
+    width: 25%
 }
 
 .logo-header {
+}
+
+.logo-header-mob {
+    width: 100%;
+}
+
+.menu-div {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap:25px;
+}
+
+.menu-iten {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carrinho-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-menu-iten {
+}
+
+
+
+.svg {
+    fill: #e42021;
+}
+.svg:hover {
+    fill: #CCCCCC;
 }
