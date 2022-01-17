@@ -214,27 +214,34 @@ body {
     font-size: 40px;
 }
 
-
-
 /*------------------------------- header -----------------------------------------*/
 
 .fac-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    align-items:center;
+    flex-flow: column;
+    align-items: center;
     justify-content: center;
-    border: one;
+    border: none;
     background-color: #FFFFFF;
 }
 
-.desktop-header-itens {
+.fac-header--desktop {
     color: #E41021;
     font-family: galano-grotesque;
     display: none;
 }
 
+.fac-header__logo--mobile {
+    width: 100%;
+}
 
+/*--breakpoint min-widht 1024px--*/
 @media (min-width: 1024px) {
-    .desktop-header-itens {
+    .fac-header--desktop {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -242,17 +249,22 @@ body {
         width: 100%;
         padding: 10px;
     }
-    
-    .logo-header-mob {
+
+    .fac-header__logo--mobile {
         display: none;
     }
 }
 
-.header__icon {
-    max-height: 1.2em
+
+@media (max-width: 1099px) {
+
+    .text-fac-header__menu__item--desktop,
+    .menu__item__txt--desktop {
+        font-size: 12;
+    }
 }
 
-.header__input {
+.fac-header__input--desktop {
     padding: 10;
     border: none;
     background: #CCCCCC;
@@ -260,21 +272,15 @@ body {
     width: 25%
 }
 
-.logo-header {
-}
 
-.logo-header-mob {
-    width: 100%;
-}
-
-.menu-div {
+.fac-header__menu--desktop {
     display: flex;
     height: 40px;
     align-items: center;
-    gap:25px;
+    gap: 25px;
 }
 
-.menu-iten {
+.fac-header__menu__item--desktop {
     height: 100%;
     display: flex;
     align-items: center;
@@ -282,21 +288,33 @@ body {
     gap: 10px;
 }
 
-.carrinho-text {
+.menu__item__txt--desktop {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
-.text-menu-iten {
-}
-
-
-
-.svg {
+.menu__item__svg--desktop {
     fill: #e42021;
 }
-.svg:hover {
+
+.menu__item__svg--desktop:hover {
     fill: #CCCCCC;
+}
+
+.menu__item__txt__price {
+    font-size: 12;
+}
+
+.pre-header {
+    width: 100%;
+    background-color: #e41021;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.testeesp {
+    padding-top: 96px
 }
