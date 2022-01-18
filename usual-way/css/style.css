@@ -220,12 +220,33 @@ body {
     font-size: 40px;
 }
 
-/*------------------------------- header -----------------------------------------*/
+/*------------------------------- header -------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----*/
 
 .fac-header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -233,11 +254,11 @@ body {
     justify-content: center;
     border: none;
     background-color: #FFFFFF;
+    font-family: 'Montserrat';
 }
 
 .fac-header--desktop {
     color: #E41021;
-    font-family: galano-grotesque;
     display: none;
 }
 
@@ -247,6 +268,16 @@ body {
 
 /*--breakpoint min-widht 1024px--*/
 @media (min-width: 1024px) {
+    .fac-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .testeesp {
+        padding-top: 96px;
+    }
+
     .fac-header--desktop {
         display: flex;
         justify-content: center;
@@ -258,6 +289,18 @@ body {
 
     .fac-header__logo--mobile {
         display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .pre-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .fac-header {
+        padding-top: 36px;
     }
 }
 
@@ -319,8 +362,4 @@ body {
     color: #ffffff;
     padding: 10px;
     text-align: center;
-}
-
-.testeesp {
-    padding-top: 96px
 }
