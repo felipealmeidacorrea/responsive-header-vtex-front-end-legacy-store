@@ -49,6 +49,7 @@ body {
     width: 100%;
     border-radius: 5px;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 .subscribe__btn {
@@ -75,6 +76,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 5px;
     padding: 5px;
+    box-sizing: border-box;
 }
 
 .pgt-media__img--lg {
@@ -90,6 +92,10 @@ body {
 .pgt-media__img--md {
     height: 38px;
     max-width: 45%;
+}
+
+.cert-and-secutity-icon {
+    height: 80px;
 }
 
 .subscribe--news {
