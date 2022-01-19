@@ -2,6 +2,13 @@ body {
     background-color: #CCCCCC;
 }
 
+@media (max-width: 767px) {
+    .body {
+
+        min-width: 360px;
+    }
+}
+
 .fac-footer {
     font-family: 'Montserrat';
     text-decoration: none;
@@ -257,25 +264,25 @@ body {
     font-family: 'Montserrat';
 }
 
+.fac-header__logo--mobile {
+    width: 100%;
+}
+
 .fac-header--desktop {
     color: #E41021;
     display: none;
 }
 
-.fac-header__logo--mobile {
-    width: 100%;
-}
-
-/*--breakpoint min-widht 1024px--*/
+/*--fac-header breakpoint min-widht 1024px--*/
 @media (min-width: 1024px) {
     .fac-header {
         position: fixed;
         top: 0;
         left: 0;
     }
-    
-    .testeesp {
-        padding-top: 96px;
+
+    .fac-header__logo--mobile {
+        display: none;
     }
 
     .fac-header--desktop {
@@ -287,29 +294,8 @@ body {
         padding: 10px;
     }
 
-    .fac-header__logo--mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 1023px) {
-    .pre-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    
-    .fac-header {
-        padding-top: 36px;
-    }
-}
-
-
-@media (max-width: 1099px) {
-
-    .text-fac-header__menu__item--desktop,
-    .menu__item__txt--desktop {
-        font-size: 12;
+    .main {
+        padding-top: 96px;
     }
 }
 
@@ -356,10 +342,38 @@ body {
     font-size: 12;
 }
 
-.pre-header {
+.top-bar {
     width: 100%;
     background-color: #e41021;
     color: #ffffff;
     padding: 10px;
     text-align: center;
+}
+
+/*--fac-header breakpoint max-widht 1024px--*/
+@media (max-width: 1023px) {
+    .fac-header {
+        padding-top: 36px;
+    }
+
+    .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 499px) {
+    .top-bar {
+        font-size: 11px
+    }
+}
+
+/*--fac-header breakpoint max-widht 1099px--*/
+@media (max-width: 1099px) {
+
+    .text-fac-header__menu__item--desktop,
+    .menu__item__txt--desktop {
+        font-size: 12;
+    }
 }

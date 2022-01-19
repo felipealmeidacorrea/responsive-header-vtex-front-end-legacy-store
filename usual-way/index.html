@@ -12,6 +12,7 @@
     <meta name="theme-color" content="#E41021" />
     <title>Responsive header</title>
     <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,12 +21,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <header class="fac-header">
-        <div class="pre-header">
-            <p>Pague suas compras com a
-            <b>praticidade e segurança do PIX</b>
-            </p>
+        <div class="top-bar">
+            <div class="slick-slide"><b>Frete Grátis</b> nas compras acima de R$100 para Manaus</div>
+            <div class="slick-slide">Cada detalhe, uma surpresa</div>
+            <div class="slick-slide">Pague suas compras com a <b>praticidade e segurança do PIX</b></div>
+            <div class="slick-slide">Entregas em até dois dias úteis <b>somente em Manaus</b></div>
+            <div class="slick-slide"><b>Até 6x sem juros</b> - parcela mínima de R$20,00 reais</div>
+            <div class="slick-slide">Pague suas compras com a <b>praticidade e segurança do PIX</b></div>
+            <div class="slick-slide">Loja Segura - ambiente protegido</div>
         </div>
         <img class="fac-header__logo--mobile" src="img/kazanto-basic-mobile-logo-banner.png" />
         <div class="fac-header--desktop">
@@ -46,10 +51,10 @@
         C237.91,390.42,236.33,392.29,234.1,393.57z" />
                     </svg>
                     <div class="text-fac-header__menu__item--desktop">
-                        <p>Lista de<br/>favoritos</p>
+                        <p>Lista de<br />favoritos</p>
                     </div>
                 </div>
-        
+
                 <div class="fac-header__menu__item--desktop">
                     <svg height="80%" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 280" enable-background="new 0 0 250 280" xml:space="preserve">
                         <path class="menu__item__svg--desktop" fill="#E31021" d="M243.48,249.24c-4.91-22.83-15.98-42.48-32.47-58.96c-13.36-13.35-29.27-23.1-47.66-28.99
@@ -66,10 +71,10 @@
         C193.74,125.01,163.84,154.82,124.99,155.35z" />
                     </svg>
                     <div class="text-fac-header__menu__item--desktop">
-                        <p>Entre ou<br/>cadastre-se</p>
+                        <p>Entre ou<br />cadastre-se</p>
                     </div>
                 </div>
-        
+
                 <div class="fac-header__menu__item--desktop">
                     <svg height="80%" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 268 369" enable-background="new 0 0 268 369" xml:space="preserve">
                         <g>
@@ -165,11 +170,11 @@
                         </g>
                     </svg>
                     <div class="text-fac-header__menu__item--desktop">
-                        <p>Lista de<br/>presentes</p>
+                        <p>Lista de<br />presentes</p>
                     </div>
                 </div>
-        
-        
+
+
                 <div class="fac-header__menu__item--desktop">
                     <svg height="80%" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 359 387" enable-background="new 0 0 359 387" xml:space="preserve">
                         <path class="menu__item__svg--desktop" fill="#E31021" d="M355.06,120.56c0-3.97-3.77-8.1-7.71-8.75c-5.82-0.96-11.72-1.42-17.53-2.37
@@ -202,33 +207,30 @@
                     </div>
                 </div>
             </div>
-        
+
         </div>
     </header>
     <main class="main">
-       <div class="testeesp">
-        <p>
-            Linha 1
-            <br>
-            Linha 2
-            <br>
-            Linha 3
-            <br>
-            Linha 4
-            <br>
-            Linha 5
-            <br>
-            Linha6
-            <br>
-            Linha 7
-            
-        </p>
-        </div>
+            <p>
+                Linha 1
+                <br>
+                Linha 2
+                <br>
+                Linha 3
+                <br>
+                Linha 4
+                <br>
+                Linha 5
+                <br>
+                Linha6
+                <br>
+                Linha 7
+            </p>
     </main>
     <footer class="fac-footer">
         <div class="fac-footer-block">
             <div class="fac-footer-block__box pequeno">
-               <img src="img/kazanto-white-logo.png">
+                <img src="img/kazanto-white-logo.png">
                 <p>Inaugurada em 09 de maio de 2015, a Kazanto vem se destacando por trazer para Manaus produtos originais, variados e de qualidade. Na Kazanto, sempre tem novidade chegando!</p>
             </div>
             <div class="fac-footer-block__box grande">
@@ -280,7 +282,9 @@
                     <div>
                         <div class="social__text">
                             <h2 class="fac-footer__text__title">WHATSAPP</h2>
-                            <a><p>(92) 98153-6426</p></a>
+                            <a>
+                                <p>(92) 98153-6426</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -322,4 +326,10 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="js/fac-kzt-app.js"></script>
+
 </body>
