@@ -242,32 +242,7 @@ input:focus {
     font-size: 40px;
 }
 
-
-/*------------------------------- header -------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-----*/
+/*FAC-header*/
 
 .fac-header {
     width: 100%;
@@ -280,82 +255,6 @@ input:focus {
     font-family: 'Montserrat';
 }
 
-.fac-header__logo-mobile {
-    width: 100%;
-}
-
-.fac-header__main-content-desktop {
-    color: #E41021;
-    display: none;
-}
-
-
-/*--fac-header breakpoint min-widht 1024px--*/
-
-@media (min-width: 1024px) {
-    .fac-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .fac-header__logo-mobile {
-        display: none;
-    }
-
-    .fac-header__main-content-desktop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .main {
-        padding-top: 96px;
-    }
-}
-
-.fac-header__input--desktop {
-    padding: 10;
-    border: none;
-    background: #CCCCCC;
-    border-radius: 5px;
-    width: 25%
-}
-
-.fac-header__menu-desktop {
-    display: flex;
-    height: 40px;
-    align-items: center;
-    gap: 25px;
-}
-
-.fac-header__menu-desktop__item {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.fac-header__menu-desktop__item__txt-price {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.fac-header__menu-desktop__item__svg {
-    fill: #e42021;
-}
-
-.fac-header__menu-desktop__item__svg:hover {
-    fill: #CCCCCC;
-}
-
 .fac-header__top-bar {
     width: 100%;
     background-color: #e41021;
@@ -364,46 +263,19 @@ input:focus {
     text-align: center;
 }
 
-
-/*--fac-header breakpoint max-widht 1024px--*/
-
-@media (max-width: 1023px) {
-    .fac-header {
-        padding-top: 36px;
-    }
-
-    .fac-header__top-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
+.fac-header__logo-mobile {
+    width: 100%;
 }
 
-@media (max-width: 499px) {
-    .fac-header__top-bar__slide {
-        font-size: 11px
-    }
+/*fac-header__main-content-desktop*/
+
+.fac-header__main-content-desktop {
+    color: #E41021;
+    display: none;
 }
 
-@media (min-width: 1024px) {
-    .fac-header .fac-header__main-content-mobile {
-        display: none;
-    }
-}
+/*-------Caixa de busca-------*/
 
-
-/*--fac-header breakpoint max-widht 1099px--*/
-
-@media (max-width: 1099px) {
-
-    .fac-header__menu-desktop__item__txt,
-    .fac-header__menu-desktop__item__txt-price {
-        font-size: 12;
-    }
-}
-
-
-/*-------Barra de busca-------*/
 .busca legend,
 .busca label,
 .busca select {
@@ -438,8 +310,216 @@ input.fulltext-search-box {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
-
 }
+
+/*Caixa de sugestões*/
+
+.ui-autocomplete {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    width: 25%;
+    justify-content: flex-start;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #CAD7E0;
+}
+
+.ui-autocomplete:first-child::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 2px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #FFFFFF;
+    position: fixed;
+    top: 0.1px
+}
+
+.ui-menu-item:first-child::before {
+    content: "Sugestões";
+    position: absolute;
+    top: 13px;
+    text-align: center;
+    color: #E41021;
+    font-weight: 600;
+    cursor: default;
+}
+
+.ui-menu-item:first-child {
+    margin-top: 40px;
+    border-top: 1px solid #CAD7E0;
+}
+
+.ui-autocomplete .ui-menu-item {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+    align-self: flex-start;
+    width: 100%;
+    border-bottom: 1px solid #CAD7E0;
+}
+
+.ui-menu-item:hover {
+    background: #E41021;
+    color: #FFFFFF;
+}
+
+.ui-corner-all {
+    display: flex;
+    align-items: center;
+}
+
+.ui-corner-all img {
+    margin-right: 10px;
+}
+
+.ui-autocomplete .ui-menu-item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*Fim da caixa de sugestões*/
+/*Fim da caixa de busca*/
+
+
+/*Menu do header-desktop*/
+
+.fac-header__main-content__menu-desktop {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 25px;
+}
+
+.fac-header__main-content__menu-desktop__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.fac-header__main-content__menu-desktop__item__txt-price {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fac-header__main-content__menu-desktop__item__svg {
+    fill: #e42021;
+}
+
+.fac-header__main-content__menu-desktop__item__svg:hover {
+    fill: #CCCCCC;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box,
+.fac-header__main-content__menu-desktop__item__gift-list-box {
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    top: 70px;
+    width: 180px;
+    padding: 16px 0 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.fac-header__main-content__menu-desktop__login-item:hover .fac-header__main-content__menu-desktop__item__login-box {
+    display: flex;
+}
+
+.fac-header__main-content__menu-desktop__gift-list-item:hover .fac-header__main-content__menu-desktop__item__gift-list-box {
+    display: flex;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    width: 100%;
+    background: #e41021;
+    border-radius: 5px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-top: 0;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content .fac-header__main-content__menu-desktop__item__login-box__content__button:first-child,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content .fac-header__main-content__menu-desktop__item__gift-list-box__content__button:first-child {
+    background-color: #058f49;
+    width: 90%;
+    color: #FFFFFF;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content .fac-header__main-content__menu-desktop__item__login-box__content__button:first-child:hover,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content .fac-header__main-content__menu-desktop__item__gift-list-box__content__button:first-child:hover {
+    background-color: #059C50;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content__button,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content__button {
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    width: 90%;
+    color: #000000;
+    padding: 5px;
+    text-align: center;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__content__button:hover,
+.fac-header__main-content__menu-desktop__item__gift-list-box__content__button:hover {
+    background-color: #CAD7E0;
+    color: #000000;
+}
+
+.fac-header__main-content__menu-desktop__item__login-box__up-arrow,
+.fac-header__main-content__menu-desktop__item__gift-list-box__up-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #E41021;
+}
+
+.fac-header__main-content__menu-desktop__item:hover .fac-header__main-content__menu-desktop__item__svg {
+    fill: #CAD7E0;
+}
+
+.fac-header__main-content__menu-desktop__item:hover .fac-header__main-content__menu-desktop__item__txt {
+    color: #CAD7E0;
+}
+
+.fac-header__main-content__menu-desktop__item:hover .fac-header__main-content__menu-desktop__item__txt-price {
+    color: #CAD7E0;
+}
+
+
+.fac-header__main-content__menu-desktop__item__txt-price p:last-child {
+    font-size: 15px;
+}
+
+/*fim do fac-header__main-content-desktop*/
+
+
+/*fac-header__main-content-mobile*/
 
 .fac-header__main-content-mobile {
     position: fixed;
@@ -462,97 +542,61 @@ input.fulltext-search-box {
     justify-content: center;
 }
 
-.fac-header__menu-desktop__item__login-box,
-.fac-header__menu-desktop__item__gift-list-box {
-    display: none;
-    flex-flow: column;
-    position: absolute;
-    top: 70px;
-    width: 180px;
-    padding: 16px 0 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
+/*FAC-header breakpoints*/
+
+@media (min-width: 1024px) {
+    .fac-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .fac-header__logo-mobile {
+        display: none;
+    }
+
+    .fac-header__main-content-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    main {
+        padding-top: 96px;
+    }
 }
 
-.fac-header__menu-desktop__login-item:hover .fac-header__menu-desktop__item__login-box {
-    display: flex;
+@media (max-width: 1023px) {
+    .fac-header {
+        padding-top: 36px;
+    }
+
+    .fac-header__top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 }
 
-.fac-header__menu-desktop__gift-list-item:hover .fac-header__menu-desktop__item__gift-list-box {
-    display: flex;
+@media (max-width: 499px) {
+    .fac-header__top-bar__slide {
+        font-size: 11px
+    }
 }
 
-.fac-header__menu-desktop__item__login-box__content,
-.fac-header__menu-desktop__item__gift-list-box__content {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 120px;
-    width: 100%;
-    background: #e41021;
-    border-radius: 5px;
-    color: #FFFFFF;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #DDDDDD;
-    border-top: 0;
+@media (min-width: 1024px) {
+    .fac-header .fac-header__main-content-mobile {
+        display: none;
+    }
 }
 
-.fac-header__menu-desktop__item__login-box__content .fac-header__menu-desktop__item__login-box__content__button:first-child,
-.fac-header__menu-desktop__item__gift-list-box__content .fac-header__menu-desktop__item__gift-list-box__content__button:first-child {
-    background-color: #058f49;
-    width: 90%;
-    color: #FFFFFF;
-}
+@media (max-width: 1099px) {
 
-.fac-header__menu-desktop__item__login-box__content .fac-header__menu-desktop__item__login-box__content__button:first-child:hover,
-.fac-header__menu-desktop__item__gift-list-box__content .fac-header__menu-desktop__item__gift-list-box__content__button:first-child:hover {
-    background-color: #059C50;
-}
-
-.fac-header__menu-desktop__item__login-box__content__button,
-.fac-header__menu-desktop__item__gift-list-box__content__button {
-    box-sizing: border-box;
-    border-radius: 5px;
-    font-size: 13px;
-    background-color: #FFFFFF;
-    width: 90%;
-    color: #000000;
-    padding: 5px;
-    text-align: center;
-}
-
-.fac-header__menu-desktop__item__login-box__content__button:hover,
-.fac-header__menu-desktop__item__gift-list-box__content__button:hover {
-    background-color: #CAD7E0;
-    color: #000000;
-}
-
-.fac-header__menu-desktop__item__login-box__up-arrow,
-.fac-header__menu-desktop__item__gift-list-box__up-arrow {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #E41021;
-}
-
-.fac-header__menu-desktop__item:hover .fac-header__menu-desktop__item__svg {
-    fill: #CAD7E0;
-}
-
-.fac-header__menu-desktop__item:hover .fac-header__menu-desktop__item__txt {
-    color: #CAD7E0;
-}
-
-.fac-header__menu-desktop__item:hover .fac-header__menu-desktop__item__txt-price {
-    color: #CAD7E0;
-}
-
-
-.fac-header__menu-desktop__item__txt-price p:last-child {
-    font-size: 15px;
+    .fac-header__main-content__menu-desktop__item__txt,
+    .fac-header__main-content__menu-desktop__item__txt-price {
+        font-size: 12;
+    }
 }
