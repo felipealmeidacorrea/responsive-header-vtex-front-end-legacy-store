@@ -1,4 +1,5 @@
 body {
+    font-family: "Montserrat", sans-serif;
     background-color: #F5F6F8;
     overflow-x: hidden;
 }
@@ -15,6 +16,11 @@ input:focus {
     outline: 0;
 }
 
+li a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: inherit;
+}
 
 .fac-footer {
     font-family: 'Montserrat';
@@ -433,6 +439,7 @@ input.fulltext-search-box {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .fac-header__main-content__menu-desktop__login-item:hover .fac-header__main-content__menu-desktop__item__login-box {
@@ -458,6 +465,7 @@ input.fulltext-search-box {
     padding: 10px;
     border: 1px solid #DDDDDD;
     border-top: 0;
+    z-index: 100;
 }
 
 .fac-header__main-content__menu-desktop__item__login-box__content .fac-header__main-content__menu-desktop__item__login-box__content__button:first-child,
@@ -599,4 +607,71 @@ input.fulltext-search-box {
     .fac-header__main-content__menu-desktop__item__txt-price {
         font-size: 12;
     }
+}
+
+.fac-dropdown-menu {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 15px;
+    background: #FFFFFF;
+}
+
+.fac-dropdown-menu__item__sub-menu {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    background: #FFFFFF;
+    width: 100%;
+    column-count: 5;
+    padding: 20px;
+    border-bottom: 1px solid #DDDDDD;
+    display: none;
+}
+
+.fac-dropdown-menu__item__sub-menu__dept__sec__cat {
+    font-size: 14px;
+}
+
+.fac-dropdown-menu__item__sub-menu__dept__sec__title {
+    color: #E41021;
+}
+
+.fac-dropdown-menu__item__sub-menu__dept__sec {
+    display: flex;
+    flex-flow: column;
+    gap:5px;
+    margin-bottom: 15px
+}
+
+.fac-dropdown-menu__item__sub-menu__item-dept {
+    font-size: 18px;
+    font-weight: 600;
+    color: #E41021;
+    display: flex;
+    flex-flow: column;
+}
+
+.fac-dropdown-menu__item__sub-menu__item {
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+.fac-dropdown-menu__item__sub-menu__item-dept p {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.fac-dropdown-menu__item__sub-menu__item ul a {
+    margin-bottom: 10px;
+}
+
+.fac-dropdown-menu__item-all:hover .fac-dropdown-menu__item__sub-menu {
+    display: inherit;}
+
+.fac-dropdown-menu__item__link:hover {
+    color: #E41021;
+    font-weight:600;
 }
