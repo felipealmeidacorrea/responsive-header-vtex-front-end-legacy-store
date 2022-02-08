@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
   </head>
 
   <body class="body">
@@ -576,6 +577,245 @@
        <div class="top-space"></div>
         <!--fac dropdown-menu-->
       <ul class="fac-dropdown-menu">
+       
+       
+     <div id="overlay" onclick="closeNav()"></div>
+
+    <div id="closeBtn" onclick="closeNav()">&times;</div>
+    <div class="sidenav" id="mySidenav">
+      <div class="sidenavHeader">
+        <i class="fas fa-user-circle"></i> Olá, Fazer login
+      </div>
+      <!--Below SideNavHeader-->
+      <div id="main-container">
+        <div class="sidenavContentHeader">Especiais</div>
+        <a href="#"><div class="sidenavContent">Ofertas</div></a>
+        <a href="#"><div class="sidenavContent">Dia das mães</div></a>
+        <a href="#"><div class="sidenavContent">Os queridinhos do instagram</div></a>
+        <hr />
+        <div class="sidenavContentHeader">Seções principais</div>
+        <a href="#" onclick="openPrimeVideo()"
+          ><div class="sidenavRow">
+            <div>Cozinha</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#" onclick="openAmazonMusic()"
+          ><div class="sidenavRow">
+            <div>Decoração</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#"
+          ><div class="sidenavRow">
+            <div>Café e chá</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#"
+          ><div class="sidenavRow">
+            <div>Incensos, velas e aromatizantes</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#"
+          ><div class="sidenavRow">
+            <div>Copos e garrafas</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#"
+          ><div class="sidenavRow">
+            <div>Utilidades e acessórios</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#"
+          ><div class="sidenavRow">
+            <div>Organização</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#"
+          ><div class="sidenavRow">
+            <div>Papelaria</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <hr />
+        <div class="sidenavContentHeader">Compre por departamento</div>
+        <a href="#"
+          ><div class="sidenavRow">
+            <div>Decoração</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i></div
+        ></a>
+        <a href="#">
+          <div class="sidenavRow">
+            <div>Floricultura e Jardim</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="sidenavRow">
+            <div>Organização</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="sidenavRow">
+            <div>Cozinha</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+          </div>
+        </a>
+        <div class="sidenavContainer" id="firstContainer">
+          <hr />
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Móveis</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Cama, mesa e banho</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Infantil e bebês</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Bar</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Jogos</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Papelaria</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Utilidades e acessórios</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Bolsas e necessaires</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+        </div>
+        <div
+          class="sidenavRowDropdown"
+          id="firstDropDown"
+          onclick="firstDropDown()"
+        >
+          <div>Ver mais</div>
+          <i
+            class="fas fa-chevron-down"
+            style="color: #8e9090; margin-left: 10px"
+          >
+          </i>
+        </div>
+        <hr />
+        <div class="sidenavContentHeader">Programas e diferenciais Kazanto</div>
+        <a href="#">
+          <div class="sidenavRow">
+            <div>Listas de presente</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="sidenavRow">
+            <div>Compartilhe e ganhe</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="sidenavRow">
+            <div>Mensagens em presentes</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="sidenavRow">
+            <div>Cartão presente</div>
+            <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+          </div>
+        </a>
+        <!--Beginning of second sidenavContainer-->
+        <div class="sidenavContainer" id="secondContainer">
+          <hr />
+          <a href="#">
+            <div class="sidenavContent">Produtos ecológicos</div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Retire na loja</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavContent">Item</div>
+          </a>
+          <a href="#">
+            <div class="sidenavRow">
+              <div>Item</div>
+              <i class="fas fa-chevron-right" style="color: #8e9090"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="sidenavContent">Item</div>
+          </a>
+        </div>
+        <div
+          class="sidenavRowDropdown"
+          id="secondDropDown"
+          onclick="secondDropDown()"
+        >
+          <div>Ver mais</div>
+          <i
+            class="fas fa-chevron-down"
+            style="color: #8e9090; margin-left: 10px"
+          >
+          </i>
+        </div>
+        <hr />
+        <div class="sidenavContentHeader">Ajuda e configurações</div>
+        <a href="#"><div class="sidenavContent">Fazer login</div></a>
+        <a href="#"><div class="sidenavContent">Minha conta</div></a>
+        <a href="#"><div class="sidenavContent">Meu endereço</div></a>
+        <a href="#"><div class="sidenavContent">Formas de pagamento</div></a>
+        <a href="#"><div class="sidenavContent">Atendimento ao consumidor</div></a>
+        <div style="height: 50px"></div>
+      </div>
+      <!--End of first container-->
+
+      <div id="sub-container">
+        <div id="mainMenu">
+          <i class="fas fa-chevron-left" style="color: #8e9090"></i> Menu principal
+        </div>
+        <hr />
+        <div id="sub-container-content">
+          <!-- <div class="sidenavContentHeader">Prime Video</div>
+          <a href="#"><div class="sidenavContent">All Videos</div></a> -->
+        </div>
+      </div>
+    </div>
+
+    <!--Not Sidenav-->
+    <div class="main-btn"
+      onclick="openNav()"
+    >
+      &#9776; Menu
+    </div>
+       
+       
         <li class="fac-dropdown-menu__item fac-dropdown-menu__item-all">
           <a href="" class="fac-dropdown-menu__item__link">Todos</a>
           <ul class="fac-dropdown-menu__item__sub-menu">
