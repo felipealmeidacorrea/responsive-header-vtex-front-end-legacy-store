@@ -7,6 +7,8 @@ $(".fac-header__top-bar").slick({
     arrows: false
 });
 
+var altura = window.screen.height;
+
 function openNav() {
     document.getElementById("mySidenav").style.animation = "expand 0.3s forwards";
     //closeBtn
@@ -30,7 +32,6 @@ function closeNav() {
         document.getElementById("closeBtn").style.display = "none";
         document.getElementById("closeBtn").style.position = "inherit";
         document.getElementById("overlay").style.display = "none";
-        
         //Reset Menus
         document.getElementById("main-container").style.animation = "";
         document.getElementById("main-container").style.transform = "translateX(0px)";
