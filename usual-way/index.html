@@ -44,8 +44,9 @@
         </div>
         <img class="fac-header__logo-mobile" src="img/kazanto-basic-mobile-logo-banner.png" />
         <div class="fac-header__main-content-desktop">
-            <a href="#"><img style="width: 200px; height: 29px;" src="img/kazanto-red-logo.png" /></a>
-            <fieldset class="busca">
+            <a id="fac-header__main-content-desktop__logo" href="#"><img style="width: 200px; height: 29px;" src="img/kazanto-red-logo.png" /></a>
+            <div class="fac-header__main-content-desktop__search">
+               <fieldset class="busca">
                 <legend>Buscar no site</legend>
                 <label>Buscar</label>
                 <select id="ftDept4aceafb578de4c7caf31e06bcc8d45b9">
@@ -58,6 +59,8 @@
                 <input id="ftBox4aceafb578de4c7caf31e06bcc8d45b9" class="fulltext-search-box" type="text" size="20" accesskey="b" placeholder="Buscar por nome ou código" />
                 <input id="ftBtn4aceafb578de4c7caf31e06bcc8d45b9" type="button" value="Buscar" class="btn-buscar" />
             </fieldset>
+       <div id="busca-mobile__overlay" class="busca-mobile__overlay" onclick="closeBuscaMobile()"></div>
+            </div>
             <div class="fac-header__main-content__menu-desktop">
                 <div class="fac-header__main-content__menu-desktop__item">
                     <svg height="80%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 471.701 471.701" style="enable-background: new 0 0 471.701 471.701" xml:space="preserve">
@@ -389,7 +392,7 @@ C251.26,347.11,245.56,352.79,237.65,352.79z" />
             c-0.01,11.21,0,22.41,0,33.62c0,13.91-0.14,27.83,0.04,41.74C335.38,221.87,324.57,231.74,312.08,231.63z" />
                   </svg>
  </div>
-                <div class="fac-dropdown-menu__nav__iten">
+                <div class="fac-dropdown-menu__nav__iten" onclick="openBuscaMobile()">
                    <svg id="SVGRoot" width="30px" height="30px" version="1.1" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                      <g transform="matrix(.045935 0 0 .045935 1.412 .55901)">
                       <g id="_x34__4_">

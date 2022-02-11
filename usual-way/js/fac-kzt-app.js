@@ -1,3 +1,4 @@
+//slick topbar
 var $ = $;
 $(".fac-header__top-bar").slick({
     autoplay: true,
@@ -6,7 +7,10 @@ $(".fac-header__top-bar").slick({
     slidesToShow: 1,
     arrows: false
 });
+//end of slick topbar
 
+
+//dropdown menu
 function openNav() {
     document.getElementById("mySidenav").style.animation = "expand 0.3s forwards";
     //closeBtn
@@ -253,5 +257,24 @@ function openDepJogos() {
     <a href="#"><div class="sidenavContent">Jogos de mesa</div></a>
     <a href="#"><div class="sidenavContent">Jogos diversos</div></a>`;
 }
+//end of dropdown menu
 
+//busca mobile
+function openBuscaMobile() {
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.display = "flex";
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.position = "fixed";
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.width = "calc(100% - 20px)";
+    document.getElementsByClassName("fac-header__main-content-desktop__search")[0].style.width = "100%";
+    document.getElementsByClassName("fulltext-search-box")[0].style.fontSize = "16px";
+    document.getElementsByClassName("fac-header__main-content__menu-desktop")[0].style.display = "none";
+    document.getElementById("fac-header__main-content-desktop__logo").style.display = "none";
+    document.getElementById("busca-mobile__overlay").style.display = "block";
+    document.getElementsByClassName("busca")[0].style.width = "100%";
+    document.getElementsByClassName("busca")[0].style.height = "50px";
+    
+}
 
+function closeBuscaMobile() {
+    document.getElementsByClassName("fac-header__main-content-desktop")[0].style.display = "none";
+}
+//end of busca mobile
