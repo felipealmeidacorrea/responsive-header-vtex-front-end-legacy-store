@@ -7,8 +7,6 @@ $(".fac-header__top-bar").slick({
     arrows: false
 });
 
-var altura = window.screen.height;
-
 function openNav() {
     document.getElementById("mySidenav").style.animation = "expand 0.3s forwards";
     //closeBtn
