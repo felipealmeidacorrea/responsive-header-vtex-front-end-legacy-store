@@ -252,6 +252,7 @@ li a {
     border: none;
     background-color: #ffffff;
     font-family: "Montserrat";
+    z-index: 99;
 }
 
 .fac-header__top-bar {
@@ -1058,4 +1059,9 @@ a:active {
     display: flex;
     flex-flow: column;
     width: 25%
+}
+
+.fac-desk-banners-home .box-banner a img {
+    width: 100%;
+    height: auto;
 }
